@@ -3,10 +3,10 @@
 
 * выбрать все записи из 2-х таблиц уникальные
 ```sql
-select distinct Group, SOF, Requests
+select  Group, SOF, Requests
 from 
 table1
-union all 
+union 
 table2
 ```
 
