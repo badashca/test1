@@ -87,22 +87,22 @@ where b.SOF is null
 ```sql
 with a as
 (
-	select
-		c.ClID as ClID,
-		c.ClFullName as [ФИО Клиента],
-		count (d.DlID ) as cnt
-	from Clients as c
-	left join Deals as d 
-	on c.ClID = d.DlClient 
-	group by 
-		c.ClID ,
-		c.ClFullName
-	having count (d.DlID ) > 1
+    select
+        c.ClID as ClID,
+        c.ClFullName as [ФИО Клиента],
+        count (d.DlID ) as cnt
+    from Clients as c
+    left join Deals as d 
+    on c.ClID = d.DlClient 
+    group by 
+        c.ClID ,
+        c.ClFullName
+    having count (d.DlID ) > 1
 )
 select 
-	a.[ФИО Клиента],
-	d.DlCode as [Номер договора],
-	d.DlValutationDate as [Дата выдачи]
+    a.[ФИО Клиента],
+    d.DlCode as [Номер договора],
+    d.DlValutationDate as [Дата выдачи]
 from a
 left join Deals as d 
 on a.ClID = d.DlClient 
