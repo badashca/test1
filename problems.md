@@ -1,4 +1,4 @@
-Problem 0
+##Problem 0
 
 * уникальные
 ```sql
@@ -20,12 +20,12 @@ table2
 
 
 
-Problem 1
+##Problem 1
 ```sql
 select * from
 ```
 
-Problem 2
+##Problem 2
 ```sql
 select * from
 ```
