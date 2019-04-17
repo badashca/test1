@@ -1,4 +1,5 @@
-##Problem 0
+#Решение задач
+##Задача 0
 
 * уникальные
 ```sql
@@ -20,12 +21,12 @@ table2
 
 
 
-##Problem 1
+##Задача 1
 ```sql
 select * from
 ```
 
-##Problem 2
+##Задача 2
 ```sql
 select * from
 ```
